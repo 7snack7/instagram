@@ -1,6 +1,7 @@
 package ru.snack.spring.springboot.instagram.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
