@@ -30,8 +30,8 @@ public class UserService {
     public User createUser(SignupRequest userIn) {
         User user = new User();
         user.setEmail(userIn.getEmail());
-        user.setName(userIn.getFirstName());
-        user.setLastname(userIn.getLastName());
+        user.setName(userIn.getFirstname());
+        user.setLastname(userIn.getLastname());
         user.setUsername(userIn.getUsername());
         user.setPassword(passwordEncoder.encode(userIn.getPassword()));
         user.getRoles().add(ERole.ROLE_USER);
