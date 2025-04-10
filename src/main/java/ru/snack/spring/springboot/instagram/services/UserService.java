@@ -52,6 +52,10 @@ public class UserService {
         return userRepository.save(user);
     }
 
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElseThrow(() -> new UsernameNotFoundException("The user " + id + " does not exist."));
+    }
+
     public User getCurrentUser(Principal principal) {
         return getUserByPrincipal(principal);
     }

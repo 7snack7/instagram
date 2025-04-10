@@ -1,4 +1,4 @@
-package ru.snack.spring.springboot.instagram.web;
+package ru.snack.spring.springboot.instagram.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
