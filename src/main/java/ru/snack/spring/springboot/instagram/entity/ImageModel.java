@@ -2,6 +2,7 @@ package ru.snack.spring.springboot.instagram.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
@@ -15,7 +16,7 @@ public class ImageModel {
     @Column(nullable = false)
     private String name;
     @Lob
-    @Column(columnDefinition = "bytea")
+    @Type(type = "org.hibernate.type.BinaryType")
     private byte[] imageBytes;
     @JsonIgnore
     private Long userId;
